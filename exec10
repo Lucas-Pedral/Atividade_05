@@ -1,0 +1,21 @@
+#include <stdio.h>
+
+int main(){
+    
+    float vendas[7], maior;
+    int diaMaior = 0;
+    
+    for (int i = 0; i < 7; i++){
+        printf("Digite as vendas ");
+        scanf("%f", &vendas[i]);
+        
+        if(vendas[i] > maior){
+            maior = vendas[i];
+            diaMaior = i;
+        }
+    }
+    
+    printf("Maior venda %.2f no dia %d", maior, diaMaior + 1);
+    
+    return 0;
+}
