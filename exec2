@@ -1,0 +1,16 @@
+#include <stdio.h>
+
+int main(){
+    
+    int numero[8];
+    int soma = 0;
+    
+    for (int i = 0; i < 8; i++){
+        printf("Digite o número para somar");
+        scanf("%d", &numero[i]);
+        
+        soma += numero[i];
+    }
+    
+    printf("A soma de todos os números foi de %d", soma);
+}
